@@ -6,21 +6,45 @@ Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'valloric/youcompleteme'
+Plug 'mxw/vim-jsx'
+Plug 'chriskempson/base16-vim'
+Plug 'simeji/winresizer'
 
-" Plugins configuration
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
+
+" YouCompleteMe and UltiSnips compatibility.
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+let g:SuperTabCrMapping = 0
+
+" Plugins configuration
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+colorscheme base16-default-dark
+set termguicolors
+" let base16colorspace=256
 
 syntax on
 set number
 set nocompatible
 set ruler
 
+
 " Default Whitespace
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 " Wrapping text by default
 set wrap
@@ -38,6 +62,9 @@ set scrolloff=3
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" use system buffer istead
+" set clipboard+=unnamed
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
@@ -59,13 +86,24 @@ set history=1000
 
 " Mappings
 map <C-n> :NERDTreeToggle<CR>
-" map <>
+:nnoremap <C-o> :buffers<CR>:buffer<Space>
 inoremap <C-F> <ESC>
 inoremap <C-c> <ESC>
 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+
+nnoremap <S-Left> :tabprevious<CR>
+nnoremap <S-Right> :tabnext<CR>
+nnoremap <C-d> Ypk<CR>
 " Vim Terminal
 " 256 colors for terminal vim
-set t_Co=256
+" set t_Co=256
 "Mode Settings
 let &t_SI.="\e[6 q" "SI = INSERT mode
 let &t_SR.="\e[4 q" "SR = REPLACE mode

@@ -94,7 +94,7 @@ GIT_PS1_SHOWCOLORHINTS=true
 # PS1+='$(__git_ps1 "\[${white}\] on \[${violet}\](%s)")'
 # PS1+="\[${yellow}\] ✗  \[${reset}\]";
 
-PS1='\[${bold}\]\h \t \u \w $(__git_ps1 " (%s)") \[${yellow}\]➜  \[${reset}\]'
+PS1='\[${bold}\]\h \t \u \w $(__git_ps1 " (%s)") \n\[${yellow}\] ➜  \[${reset}\]'
 export PS1;
 
 export NVM_DIR="$HOME/.nvm"
