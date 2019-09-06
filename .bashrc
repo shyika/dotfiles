@@ -8,10 +8,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # orange=$(tput setaf 166);
 # yellow=$(tput setaf 228);
-# green=$(tput setaf 71);
+green=$(tput setaf 71);
 # white=$(tput setaf 15);
 # bold=$(tput bold);
-# reset=$(tput sgr0);
+reset=$(tput sgr0);
 
 # purple=$(tput setaf 125);
 # violet=$(tput setaf 61);
@@ -40,8 +40,8 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 
 alias g="git"
-alias gclean='git branch | grep -v "master" | xargs git branch -D'
-alias gcochore='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.jsx'
+alias gbclean='git branch | grep -v "master" | xargs git branch -D'
+alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.jsx'
 # If you have branches containing master then this script won't delete those.
 # git branch | grep -ve " master$" | xargs git branch -D
 alias c='clear'
@@ -92,10 +92,10 @@ GIT_PS1_SHOWCOLORHINTS=true
 # PS1+="\[${white}\] in "
 # PS1+="\[${green}\]\w"
 # PS1+='$(__git_ps1 "\[${white}\] on \[${violet}\](%s)")'
-# PS1+="\[${yellow}\] ✗  \[${reset}\]";
+# PS1+="\[${yellow}\] ✗ \[${reset}\]";
 
 # PS1='\[${bold}\]\h \t \u \w $(__git_ps1 " (%s)") \n\[${yellow}\] ➜  \[${reset}\]'
-PS1='\h \t \u \w $(__git_ps1 " (%s)") ➜  '
+PS1='\[${green}\]➜\[${reset}\]  \W $(__git_ps1 " (%s)") '
 export PS1;
 
 export NVM_DIR="$HOME/.nvm"
