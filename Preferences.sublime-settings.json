@@ -39,3 +39,36 @@
   "enable_tab_scrolling": false,
   "spacegray_fileicons": true
 }
+
+
+{
+  "snippets":{
+    "html": {
+      "snippets": {
+        "cl": "console.log(${1})",
+        "ce": "console.error(${1})",
+        "ci": "console.info(${1})",
+        "f" : "function${1}(${2}) {}${3}",
+        "ph140":"<img src='http://placehold.it/140x100'/>",
+        "ph200":"<img src='http://placehold.it/200x100'/>",
+        "lpimg":"<img src=\"http://lorempixel.com/400/200\">",
+        "lpgimg":"<img src=\"http://lorempixel.com/g/400/200\">"
+      },
+      "tags": {
+        "link": "<link ref='stylesheet' href='${1}'>"
+      }
+    }
+  }
+}
+
+// Plugins list
+  // AutoFileName
+  // Emmet
+  // BracketHighLighter
+  // GitGutter
+  // Babel
+  // Theme - Spacegray
+  // JSX
+  // LiveReload
+  // Sass
+
