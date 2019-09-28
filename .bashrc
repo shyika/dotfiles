@@ -98,8 +98,9 @@ GIT_PS1_SHOWCOLORHINTS=true
 # PS1+="\[${yellow}\] ✗ \[${reset}\]";
 
 # PS1='\[${bold}\]\h \t \u \w $(__git_ps1 " (%s)") \n\[${yellow}\] ➜  \[${reset}\]'
-PS1='➜ \W $(__git_ps1 " (%s)") '
-export PS1;
+# PS1='➜ \W $(__git_ps1 " (%s)") '
+# export PS1;
+export PS1='\W$(__git_ps1 " (%s)") \$ '
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
