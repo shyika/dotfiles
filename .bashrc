@@ -3,15 +3,18 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Linux
+# export PATH="$HOME/bin:/home/linuxbrew/.linuxbrew/bin:$PATH";
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # orange=$(tput setaf 166);
 # yellow=$(tput setaf 228);
-green=$(tput setaf 71);
+# green=$(tput setaf 71);
 # white=$(tput setaf 15);
 # bold=$(tput bold);
-reset=$(tput sgr0);
+# reset=$(tput sgr0);
 
 # purple=$(tput setaf 125);
 # violet=$(tput setaf 61);
@@ -95,7 +98,7 @@ GIT_PS1_SHOWCOLORHINTS=true
 # PS1+="\[${yellow}\] ✗ \[${reset}\]";
 
 # PS1='\[${bold}\]\h \t \u \w $(__git_ps1 " (%s)") \n\[${yellow}\] ➜  \[${reset}\]'
-PS1='\[${green}\]➜\[${reset}\]  \W $(__git_ps1 " (%s)") '
+PS1='➜ \W $(__git_ps1 " (%s)") '
 export PS1;
 
 export NVM_DIR="$HOME/.nvm"
