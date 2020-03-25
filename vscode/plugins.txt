@@ -1,0 +1,8 @@
+Auto Complete Tag
+Babel Javascript
+ES7/React/Redux/GraphQL/React-Native snippets
+ESLint
+GitLens - Git supercharged
+Material Icon Theme
+Vim
+vscode-itellij-darcula-theme(italic)
