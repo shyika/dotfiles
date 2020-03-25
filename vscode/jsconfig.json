@@ -1,0 +1,34 @@
+{
+    "exclude": [
+        "node_modules",
+        "dist",
+        "temp",
+        "coverage",
+
+        "release",
+        "test-reports",
+        "analytics",
+        "build",
+        "dist-versioned",
+        "tmp",
+        "package"
+    ],
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "ES6",
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+            "platform-common-components-ui": ["./packages/platform-common-components-ui/src"],
+            "platform-common-service": ["./packages/platform-common-service/src"],
+            "devices-common-service": ["./packages/devices-common-service/src"],
+            "tasking-common-service": ["./packages/tasking-common-service/src"],
+            "tasking-common-components": ["./packages/tasking-common-components/src"],
+            "platform-common-utils": ["./packages/platform-common-utils/src"],
+            "sites-service": ["./packages/sites-service/src"],
+            "automation-common-service": ["./packages/automation-common-service/src"]
+        }
+    }
+}

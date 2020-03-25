@@ -1,0 +1,34 @@
+{
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "all",
+    "editor.cursorBlinking": "solid",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "vim.useSystemClipboard": true,
+    "editor.fontSize": 12,
+    "vim.normalModeKeyBindingsNonRecursive": [{
+        "before": ["<tab>", "<left>"],
+        "commands": [":tabprevious"]
+    }, {
+        "before": ["<tab>", "<right>"],
+        "commands": [":tabnext"]
+    }, {
+        "before": ["<C-d>"],
+        "after": ["Y", "p", "k"]
+    }, {
+        "before": ["<C-c>"],
+        "after": ["<Esc>"]
+    }, {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+    }],
+    "workbench.colorTheme": "Webstorm italic theme",
+    "explorer.confirmDelete": false,
+    "workbench.tree.indent": 4,
+    "workbench.tree.renderIndentGuides": "none",
+    "material-icon-theme.opacity": 0.3,
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.activeIconPack": "react_redux"
+}
