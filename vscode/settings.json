@@ -5,7 +5,12 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "vim.useSystemClipboard": true,
-    "editor.fontSize": 12,
+    "editor.tabCompletion": "on",
+    "editor.fontSize": 13,
+    "vim.easymotion": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [{
         "before": ["<tab>", "<left>"],
         "commands": [":tabprevious"]
@@ -16,19 +21,25 @@
         "before": ["<C-d>"],
         "after": ["Y", "p", "k"]
     }, {
+        "before": ["s"],
+        "after": ["<leader>", "<leader>", "s"]
+    },{
         "before": ["<C-c>"],
         "after": ["<Esc>"]
     }, {
         "before": ["<C-n>"],
         "commands": [":nohl"]
     }],
-    "workbench.colorTheme": "Webstorm italic theme",
+    "workbench.colorTheme": "Darkula",
     "explorer.confirmDelete": false,
-    "workbench.tree.indent": 4,
     "workbench.tree.renderIndentGuides": "none",
-    "material-icon-theme.opacity": 0.3,
+    "material-icon-theme.opacity": 0.5,
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.folders.color": "#90a4ae",
-    "material-icon-theme.activeIconPack": "react_redux"
+    "material-icon-theme.activeIconPack": "react_redux",
+    "files.watcherExclude": {
+        "**/coverage/**": true
+    },
+    "workbench.tree.indent": 10
 }

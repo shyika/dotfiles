@@ -1,8 +1,11 @@
 Auto Complete Tag
 Babel Javascript
+Darkula
 ES7/React/Redux/GraphQL/React-Native snippets
 ESLint
 GitLens - Git supercharged
+Image preview
 Material Icon Theme
+TabNine
 Vim
 vscode-itellij-darcula-theme(italic)
