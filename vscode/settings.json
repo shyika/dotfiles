@@ -2,6 +2,9 @@
     "window.zoomLevel": 0,
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "solid",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "vim.useSystemClipboard": true,
@@ -9,6 +12,7 @@
     "editor.fontSize": 13,
     "vim.easymotion": true,
     "vim.useCtrlKeys": true,
+    "workbench.settings.editor": "json", //can be ui here
     "vim.hlsearch": true,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [{
@@ -41,5 +45,6 @@
     "files.watcherExclude": {
         "**/coverage/**": true
     },
-    "workbench.tree.indent": 10
+    "workbench.tree.indent": 10,
+    "tabnine.experimentalAutoImports": true
 }
