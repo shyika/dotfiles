@@ -94,9 +94,16 @@
 }
 
 // Plugins list
+  // All Autocomplete
+  // Color Highlighter 
   // AutoFileName
   // EasyMotion
   // Emmet
+  // Eslint
+  // Git
+  // GitGutter
+  // SideBarEnhancements
+  // Theme - Spacegray
   // Pretty JSON
   // BracketHighLighter
   // GitGutter
