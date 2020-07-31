@@ -3,17 +3,16 @@ set incsearch
 set ignorecase
 set smartcase
 
+let mapleader = " "
+
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
-
-inoremap <C-F> <ESC>
-inoremap <C-c> <ESC>
-
 nnoremap <S-Left> :tabprevious<CR>
 nnoremap <S-Right> :tabnext<CR>
 nnoremap <C-d> Ypk<CR>
+nnoremap <C-c> <Esc>
+
+nmap s :action KJumpAction<cr>
