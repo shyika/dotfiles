@@ -1,4 +1,4 @@
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+# [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
@@ -25,7 +25,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 
 # export FORCE_COLOR=true
-# alias open='explorer'
+alias open='explorer'
 
 # Easier navigation:
 alias ~='cd ~'
@@ -44,14 +44,10 @@ alias p="cd ~/projects"
 
 alias g="git"
 alias gbclean='git branch | grep -v "master" | xargs git branch -D'
-alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.jsx'
 # If you have branches containing master then this script won't delete those.
 # git branch | grep -ve " master$" | xargs git branch -D
 alias c='clear'
 alias r='source ~/.bashrc'
-
-alias w='cd ~/projects/continuum'
-alias m='cd ~/mus'
 # 320K
 # Download and convert to mp3 from youtube
 alias ydmp3='youtube-dl -x --audio-format mp3 --audio-quality 0'
@@ -102,6 +98,6 @@ GIT_PS1_SHOWCOLORHINTS=true
 # export PS1;
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
