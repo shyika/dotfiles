@@ -71,6 +71,11 @@
   "word_wrap": true
 }
 
+// Key bindings
+[
+    { "keys": ["shift+right"], "command": "next_view" },
+    { "keys": ["shift+left"], "command": "prev_view" }
+]
 
 
 {
