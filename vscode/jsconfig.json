@@ -28,7 +28,17 @@
             "tasking-common-components": ["./packages/tasking-common-components/src"],
             "platform-common-utils": ["./packages/platform-common-utils/src"],
             "sites-service": ["./packages/sites-service/src"],
-            "automation-common-service": ["./packages/automation-common-service/src"]
+            "automation-common-service": ["./packages/automation-common-service/src"],
+            "platform-net-service": ["./packages/platform-net-service/src"],
+            "remote-access-components": ["./packages/remote-access-components/src"],
+            "remote-access-service": ["./packages/remote-access-service/src"],
+            "correlation-engine-common-service": ["./packages/correlation-engine-common-service/src"],
+            "platform-composite-components": ["./packages/platform-composite-components/src"],
+            "user-management-common-service": ["./packages/user-management-common-service/src"],
+            "cloud-monitoring-common-service": ["./packages/cloud-monitoring-common-service/src"],
+            "scripting-module": ["./packages/scripting-module/src"],
+            "os-patching-common-service": ["./packages/os-patching-common-service/src"],
+            "platform-user-auth-service": ["./packages/platform-user-auth-service/src"],
         }
     }
 }
