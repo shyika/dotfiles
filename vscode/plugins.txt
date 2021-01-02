@@ -9,3 +9,4 @@ Material Icon Theme
 TabNine
 Vim
 vscode-intellij-darcula-theme(italic)
+Live Share
