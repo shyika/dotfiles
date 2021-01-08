@@ -10,6 +10,7 @@
     "vim.useSystemClipboard": true,
     "editor.tabCompletion": "on",
     "editor.fontSize": 13,
+    "editor.fontFamily": "'Meslo LG S DZ', Consolas, 'Courier New', monospace",
     "vim.easymotion": true,
     "vim.useCtrlKeys": true,
     "workbench.settings.editor": "json", //can be ui here
@@ -34,7 +35,6 @@
         "before": ["<C-n>"],
         "commands": [":nohl"]
     }],
-    "workbench.colorTheme": "Darkula",
     "explorer.confirmDelete": false,
     "workbench.tree.renderIndentGuides": "none",
     "material-icon-theme.opacity": 0.5,
@@ -46,5 +46,6 @@
         "**/coverage/**": true
     },
     "workbench.tree.indent": 10,
-    "tabnine.experimentalAutoImports": true
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "Webstorm italic theme"
 }

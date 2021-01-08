@@ -8,4 +8,5 @@ Image preview
 Material Icon Theme
 TabNine
 Vim
-vscode-itellij-darcula-theme(italic)
+vscode-intellij-darcula-theme(italic)
+Live Share

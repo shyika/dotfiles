@@ -39,11 +39,12 @@
   "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
   "draw_white_space": "all",
   "enable_tab_scrolling": false,
+  "font_face": "Meslo LG S DZ",
   "font_options":
   [
     "gray_antialias"
   ],
-  "font_size": 14,
+  "font_size": 10,
   "hot_exit": false,
   "ignored_packages":
   [
@@ -65,7 +66,7 @@
   "spacegray_tabs_auto_width": true,
   "spacegray_tabs_font_small": true,
   "spacegray_tabs_small": true,
-  "tab_size": 4,
+  "tab_size": 2,
   "theme": "Spacegray.sublime-theme",
   "translate_tabs_to_spaces": true,
   "word_wrap": true
