@@ -100,6 +100,8 @@
 }
 
 // Plugins list
+  // Javascript Completions
+  // ChangeQuotes
   // All Autocomplete
   // Color Highlighter 
   // AutoFileName
@@ -109,12 +111,9 @@
   // Git
   // GitGutter
   // SideBarEnhancements
-  // Theme - Spacegray
   // Pretty JSON
   // BracketHighLighter
-  // GitGutter
   // Babel
-  // Theme - Spacegray
   // JSX
   // LiveReload
   // Sass
