@@ -22,6 +22,7 @@
         "baseUrl": "./",
         "paths": {
             "platform-common-components-ui": ["./packages/platform-common-components-ui/src"],
+            "extensibility-common-components": ["./packages/extensibility-common-components/src"],
             "platform-common-service": ["./packages/platform-common-service/src"],
             "devices-common-service": ["./packages/devices-common-service/src"],
             "tasking-common-service": ["./packages/tasking-common-service/src"],

@@ -2,21 +2,24 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Shortcuts
-alias d="cd ~/Dropbox"
+alias ~='cd ~'
+alias dr="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
+alias m="cd ~/Desktop/music"
+alias ms="mongod -f /Users/tshyik/mongod.conf"
 
 alias c='clear'
 alias r='source ~/.zshrc'
-alias w='cd ~/projects/continuum'
 # 320K
 # Download and convert to mp3 from youtube
 alias ydmp3='youtube-dl -x --audio-format mp3 --audio-quality 0'
 alias ydlmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --yes-playlist'
 
 alias gbclean='git branch | grep -v "master" | xargs git branch -D'
-alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.jsx'
+alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.js'
+alias grestore='git restore --staged index-with-menu.html tsconfig.json .gitignore'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
