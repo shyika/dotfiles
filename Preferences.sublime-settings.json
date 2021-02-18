@@ -7,9 +7,13 @@
   "enable_tab_scrolling": false,
   "font_options":
   [
-    "gray_antialias"
+    "gray_antialias",
+    "subpixel_antialias"
   ],
   "font_size": 14,
+  "color_scheme": "Packages/GitHub Theme/schemes/GitHub Dark.sublime-color-scheme",
+  "theme": "GitHub-Theme.sublime-theme",
+  "highlight_line": true,
   "hot_exit": false,
   "ignored_packages":
   [
@@ -26,6 +30,7 @@
   "scroll_speed": 0,
   "show_encoding": true,
   "show_line_endings": true,
+  "show_sidebar_disclosure": false,
   "tab_size": 4,
   "translate_tabs_to_spaces": true,
   "word_wrap": true
@@ -60,6 +65,7 @@
 }
 
 // Plugins list
+  // GitHub Theme
   // Javascript Completions
   // ChangeQuotes
   // All Autocomplete
