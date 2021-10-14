@@ -2,7 +2,6 @@
   "always_show_minimap_viewport": true,
   "bold_folder_labels": true,
   "caret_style": "solid",
-  "color_scheme": "Packages/Babel/Monokai Phoenix.tmTheme",
   "draw_white_space": "all",
   "enable_tab_scrolling": false,
   "font_options":
@@ -10,14 +9,12 @@
     "gray_antialias",
     "subpixel_antialias"
   ],
-  "font_size": 14,
-  "color_scheme": "Packages/GitHub Theme/schemes/GitHub Dark.sublime-color-scheme",
-  "theme": "GitHub-Theme.sublime-theme",
+  "font_size": 13,
   "highlight_line": true,
   "hot_exit": false,
   "ignored_packages":
   [
-    "JavaScript"
+    "JavaScript",
   ],
   "indent_guide_options":
   [
@@ -30,10 +27,12 @@
   "scroll_speed": 0,
   "show_encoding": true,
   "show_line_endings": true,
-  "show_sidebar_disclosure": false,
   "tab_size": 4,
   "translate_tabs_to_spaces": true,
-  "word_wrap": true
+  "word_wrap": true,
+  "theme": "Soda Dark 3.sublime-theme",
+  "soda_classic_tabs": true,
+  "color_scheme": "Packages/Soda/Monokai Soda.tmTheme",
 }
 
 
@@ -65,7 +64,8 @@
 }
 
 // Plugins list
-  // GitHub Theme
+  // Theme - Soda
+  // SyncedSideBar
   // Javascript Completions
   // ChangeQuotes
   // All Autocomplete

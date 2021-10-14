@@ -1,5 +1,4 @@
 {
-    "window.zoomLevel": 0,
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "solid",
     "editor.tabSize": 4,
@@ -37,17 +36,26 @@
     }],
     "explorer.confirmDelete": false,
     "workbench.tree.renderIndentGuides": "none",
-    "material-icon-theme.opacity": 0.5,
-    "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.folders.theme": "specific",
-    "material-icon-theme.folders.color": "#90a4ae",
-    "material-icon-theme.activeIconPack": "react_redux",
     "files.watcherExclude": {
         "**/coverage/**": true
     },
     "workbench.tree.indent": 10,
     "tabnine.experimentalAutoImports": true,
-    "workbench.colorTheme": "Darcula",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "prettier.tabWidth": 4,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.arrowParens": "avoid",
+    "prettier.trailingComma": "none"
 }
