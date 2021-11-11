@@ -6,8 +6,8 @@ export PATH="$HOME/bin:$PATH";
 # Linux
 # export PATH="$HOME/bin:/home/linuxbrew/.linuxbrew/bin:$PATH";
 
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# export CLICOLOR=1
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # orange=$(tput setaf 166);
 # yellow=$(tput setaf 228);
