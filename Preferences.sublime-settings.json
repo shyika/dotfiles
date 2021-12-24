@@ -9,7 +9,7 @@
     "gray_antialias",
     "subpixel_antialias"
   ],
-  "font_size": 13,
+  "font_size": 14,
   "highlight_line": true,
   "hot_exit": false,
   "ignored_packages":
@@ -20,6 +20,10 @@
   [
     "draw_normal",
     "draw_active"
+  ],
+  "enabled_plugins": [
+    "SimpleReloadPlugin",
+    "SimpleRefresh"
   ],
   "index_files": false,
   "margin": 0,
@@ -39,7 +43,13 @@
 // Key bindings
 [
     { "keys": ["shift+right"], "command": "next_view" },
-    { "keys": ["shift+left"], "command": "prev_view" }
+    { "keys": ["shift+left"], "command": "prev_view" },
+    { 
+        "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+            "cmd": "/bin/zsh",
+            "cwd": "${file_path:${folder}}"
+        }
+    }
 ]
 
 
@@ -64,6 +74,7 @@
 }
 
 // Plugins list
+  // Terminus
   // Theme - Soda
   // SyncedSideBar
   // Javascript Completions
