@@ -10,6 +10,7 @@ Vim
 Live Share
 Live Server
 Auto Import - ES6, TS, JSX, TSX
+One Dark Pro
 
 CSS Peek
 Bracket Pair Colorizer
