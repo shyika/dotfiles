@@ -1,29 +1,23 @@
 {
-  "always_show_minimap_viewport": true,
-  "bold_folder_labels": true,
-  "caret_style": "solid",
-  "draw_white_space": "all",
-  "enable_tab_scrolling": false,
+  "ignored_packages": [
+  ],
+  "color_scheme": "Packages/Visual Studio Dark/Visual Studio Dark.tmTheme",
   "font_options":
   [
     "gray_antialias",
     "subpixel_antialias"
   ],
-  "font_size": 14,
   "highlight_line": true,
-  "hot_exit": false,
-  "ignored_packages":
-  [
-    "JavaScript",
-  ],
-  "indent_guide_options":
+  "always_show_minimap_viewport": true,
+    "bold_folder_labels": true,
+    "caret_style": "solid",
+    "draw_white_space": "all",
+    "enable_tab_scrolling": false,
+    "hot_exit": "disabled",
+    "indent_guide_options":
   [
     "draw_normal",
     "draw_active"
-  ],
-  "enabled_plugins": [
-    "SimpleReloadPlugin",
-    "SimpleRefresh"
   ],
   "index_files": false,
   "margin": 0,
@@ -34,9 +28,8 @@
   "tab_size": 4,
   "translate_tabs_to_spaces": true,
   "word_wrap": true,
-  "theme": "Soda Dark 3.sublime-theme",
-  "soda_classic_tabs": true,
-  "color_scheme": "Packages/Soda/Monokai Soda.tmTheme",
+  "font_face": "SF Mono",
+  "font_size": 10,
 }
 
 
@@ -75,7 +68,7 @@
 
 // Plugins list
   // Terminus
-  // Theme - Soda
+  // Visual Studio Dark
   // SyncedSideBar
   // Javascript Completions
   // ChangeQuotes
