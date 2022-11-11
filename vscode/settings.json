@@ -1,4 +1,71 @@
 {
+    "vim.incsearch": true,
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<shift+tab>"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<tab>", "<left>"],
+            "commands": [":tabprevious"]
+        },
+        {
+            "before": ["<tab>", "<right>"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["Y", "p", "k"]
+        },
+        {
+            "before": ["s"],
+            "after": ["<leader>", "<leader>", "s"]
+        },
+        {
+            "before": ["<C-c>"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<tab>"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<shift+tab>"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "solid",
     "editor.tabSize": 4,
@@ -6,36 +73,11 @@
     "editor.detectIndentation": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "vim.useSystemClipboard": true,
     "editor.tabCompletion": "on",
-    "editor.fontSize":  14,
-    "editor.lineHeight": 24,
-    // "editor.fontFamily": "JetBrains Mono",
-    "vim.easymotion": true,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "SF Mono",
     "workbench.editor.wrapTabs": true,
-    "vim.useCtrlKeys": true,
     "workbench.settings.editor": "json", //can be ui here
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.normalModeKeyBindingsNonRecursive": [{
-        "before": ["<tab>", "<left>"],
-        "commands": [":tabprevious"]
-    }, {
-        "before": ["<tab>", "<right>"],
-        "commands": [":tabnext"]
-    }, {
-        "before": ["<C-d>"],
-        "after": ["Y", "p", "k"]
-    }, {
-        "before": ["s"],
-        "after": ["<leader>", "<leader>", "s"]
-    },{
-        "before": ["<C-c>"],
-        "after": ["<Esc>"]
-    }, {
-        "before": ["<C-n>"],
-        "commands": [":nohl"]
-    }],
     "explorer.confirmDelete": false,
     "workbench.tree.renderIndentGuides": "none",
     "files.watcherExclude": {
@@ -44,22 +86,13 @@
     "workbench.tree.indent": 10,
     "tabnine.experimentalAutoImports": true,
     "git.autofetch": true,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Visual Studio Dark",
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "eslint.workingDirectories": [
-        "/Users/tshyik/Desktop/projects/memories_project/client"
-    ],
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-    ],
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
@@ -69,49 +102,11 @@
     "prettier.singleQuote": true,
     "prettier.arrowParens": "avoid",
     "prettier.trailingComma": "none",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-          {
-            "name": "italic font",
-            "scope": [
-              "comment",
-              "keyword",
-              "storage",
-              "keyword.control",
-              "keyword.control.from",
-              "keyword.control.flow",
-              "keyword.operator.new",
-              "keyword.control.import",
-              "keyword.control.export",
-              "keyword.control.default",
-              "keyword.control.trycatch",
-              "keyword.control.conditional",
-              "storage.type",
-              "storage.type.class",
-              "storage.modifier.tsx",
-              "storage.type.function",
-              "storage.modifier.async",
-              "variable.language",
-              "variable.language.this",
-              "variable.language.super",
-              "meta.class",
-              "meta.var.expr",
-              "constant.language.null",
-              "support.type.primitive",
-              "entity.name.method.js",
-              "entity.other.attribute-name",
-              "punctuation.definition.comment",
-              "text.html.basic entity.other.attribute-name",
-              "tag.decorator.js entity.name.tag.js",
-              "tag.decorator.js punctuation.definition.tag.js",
-              "source.js constant.other.object.key.js string.unquoted.label.js",
-            ],
-            "settings": {
-              "fontStyle": "italic",
-            }
-          },
-        ]
-      }
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#BF616A",
+        "statusBar.noFolderBackground": "#BF616A",
+        "statusBar.debuggingBackground": "#BF616A",
+        "statusBar.foreground": "#434C5E",
+        "statusBar.debuggingForeground": "#434C5E"
+    }
 }
