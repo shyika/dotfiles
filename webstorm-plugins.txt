@@ -1,0 +1,5 @@
+CodeTogether
+GitToolBox
+IdeaVim
+Kjump
+SonarLint
