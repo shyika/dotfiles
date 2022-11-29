@@ -1,67 +1,73 @@
 {
-  "ignored_packages": [
-  ],
-  "color_scheme": "Packages/Visual Studio Dark/Visual Studio Dark.tmTheme",
-  "font_options":
-  [
-    "gray_antialias",
-    "subpixel_antialias"
-  ],
-  "highlight_line": true,
-  "always_show_minimap_viewport": true,
-    "bold_folder_labels": true,
-    "caret_style": "solid",
-    "draw_white_space": "all",
-    "enable_tab_scrolling": false,
-    "hot_exit": "disabled",
-    "indent_guide_options":
-  [
-    "draw_normal",
-    "draw_active"
-  ],
-  "index_files": false,
-  "margin": 0,
-  "overlay_scroll_bars": "enabled",
-  "scroll_speed": 0,
-  "show_encoding": true,
-  "show_line_endings": true,
-  "tab_size": 4,
-  "translate_tabs_to_spaces": true,
-  "word_wrap": true,
-  "font_face": "SF Mono",
-  "font_size": 10,
+	"ignored_packages":[
+	],
+	"theme": "Spacegray.sublime-theme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"spacegray_tabs_font_small": true,
+	"spacegray_tabs_auto_width": true,
+	"spacegray_sidebar_font_small": true,
+	"spacegray_sidebar_tree_small": true,
+	"spacegray_fileicons": false,
+	"font_options":
+	[
+		"gray_antialias",
+		"subpixel_antialias"
+	],
+	"highlight_line": true,
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"caret_style": "solid",
+	"draw_white_space": "all",
+	"enable_tab_scrolling": false,
+	"hot_exit": "disabled",
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"index_files": false,
+	"margin": 0,
+	"overlay_scroll_bars": "enabled",
+	"scroll_speed": 0,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false,
+	"font_size": 13,
 }
+
 
 
 // Key bindings
 [
-    { "keys": ["shift+right"], "command": "next_view" },
-    { "keys": ["shift+left"], "command": "prev_view" },
-    { 
-        "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
-            "cmd": "/bin/zsh",
-            "cwd": "${file_path:${folder}}"
-        }
-    }
+	{ "keys": ["shift+right"], "command": "next_view" },
+	{ "keys": ["shift+left"], "command": "prev_view" },
+	{ 
+		"keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+			"cmd": "/bin/zsh",
+			"cwd": "${file_path:${folder}}"
+		}
+	}
 ]
 
 {
   "snippets":{
-    "html": {
-      "snippets": {
-        "cl": "console.log(${1})",
-        "ce": "console.error(${1})",
-        "ci": "console.info(${1})",
-        "f" : "function${1}(${2}) {}${3}",
-        "ph140":"<img src='http://placehold.it/140x100'/>",
-        "ph200":"<img src='http://placehold.it/200x100'/>",
-        "lpimg":"<img src=\"http://lorempixel.com/400/200\">",
-        "lpgimg":"<img src=\"http://lorempixel.com/g/400/200\">"
-      },
-      "tags": {
-        "link": "<link ref='stylesheet' href='${1}'>"
-      }
-    }
+	"html": {
+	  "snippets": {
+		"cl": "console.log(${1})",
+		"ce": "console.error(${1})",
+		"ci": "console.info(${1})",
+		"f" : "function${1}(${2}) {}${3}",
+		"ph140":"<img src='http://placehold.it/140x100'/>",
+		"ph200":"<img src='http://placehold.it/200x100'/>",
+		"lpimg":"<img src=\"http://lorempixel.com/400/200\">",
+		"lpgimg":"<img src=\"http://lorempixel.com/g/400/200\">"
+	  },
+	  "tags": {
+		"link": "<link ref='stylesheet' href='${1}'>"
+	  }
+	}
   }
 }
 
