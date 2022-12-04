@@ -38,6 +38,7 @@
 }
 
 
+
 // Key bindings
 [
 	{ "keys": ["shift+right"], "command": "next_view" },
