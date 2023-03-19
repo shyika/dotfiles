@@ -44,8 +44,9 @@ alias p="cd ~/projects"
 
 alias g="git"
 alias gbclean='git branch | grep -v "master" | xargs git branch -D'
+alias gbclean='git branch | grep -v "main" | xargs git branch -D'
 alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.js'
-alias grestore='git restore --staged index-with-menu.html index.html .gitignore'
+alias grestore='git restore --staged index-with-menu.html index.html scripts/token-update.js'
 # If you have branches containing master then this script won't delete those.
 # git branch | grep -ve " master$" | xargs git branch -D
 alias c='clear'
