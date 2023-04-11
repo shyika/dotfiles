@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$HOME/bin:/usr/local/bin:$PATH"
+export SUBLIME="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+
+export PYENV_ROOT="$HOME/.pyenv"
+
+
+export PATH=$SUBLIME:$HOME/bin:/usr/local/bin:$PATH
 
 # Shortcuts
 alias ~='cd ~'
@@ -14,8 +19,8 @@ alias c='clear'
 alias r='source ~/.zshrc'
 # 320K
 # Download and convert to mp3 from youtube
-alias ydmp3='youtube-dl -x --audio-format mp3 --audio-quality 0'
-alias ydlmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --yes-playlist'
+alias ydmp3='yt-dlp -x --audio-format mp3 --audio-quality 0'
+# alias ydlmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --yes-playlist'
 
 alias gbclean='git branch | grep -v "master" | xargs git branch -D'
 alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.js'
@@ -120,6 +125,37 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
+
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
+      nvm use
+    fi
+  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
