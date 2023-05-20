@@ -20,11 +20,13 @@ alias r='source ~/.zshrc'
 # 320K
 # Download and convert to mp3 from youtube
 alias ydmp3='yt-dlp -x --audio-format mp3 --audio-quality 0'
+alias ydv='yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
 # alias ydlmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --yes-playlist'
 
 alias gbclean='git branch | grep -v "master" | xargs git branch -D'
+alias gbclear='git branch | grep -v "main" | xargs git branch -D'
 alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.js'
-alias grestore='git restore --staged index-with-menu.html tsconfig.json .gitignore'
+alias grestore='git restore --staged index-with-menu.html index.html scripts/token-update.js .gitignore webpack.config.js'
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
