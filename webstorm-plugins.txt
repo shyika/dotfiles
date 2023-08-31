@@ -1,5 +1,7 @@
-CodeTogether
 GitToolBox
 IdeaVim
 Kjump
+i18n support
+
 SonarLint
+CodeTogether
