@@ -1,0 +1,206 @@
+{
+    "vim.incsearch": true,
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<shift+tab>"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<tab>", "<left>"],
+            "commands": [":tabprevious"]
+        },
+        {
+            "before": ["<tab>", "<right>"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["Y", "p", "k"]
+        },
+        {
+            "before": ["s"],
+            "after": ["<leader>", "<leader>", "s"]
+        },
+        {
+            "before": ["<C-c>"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<tab>"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<shift+tab>"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+
+    "editor.renderWhitespace": "all",
+    "editor.cursorBlinking": "solid",
+    "editor.tabSize": 4,
+    "editor.folding": false,
+    "editor.smoothScrolling": true,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.insertSpaces": false,
+    "editor.glyphMargin": false,
+    "editor.scrollBeyondLastLine": true,
+    "editor.suggestSelection": "first",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.detectIndentation": true,
+    "editor.tabCompletion": "on",
+    "editor.minimap.enabled": false,
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.inlineSuggest.enabled": true,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "IBM Plex Mono",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              //following will be in italic (=FlottFlott)
+              "comment",
+              "entity.name.type.class", //class names
+              "keyword", //import, export, return…
+              "constant", //String, Number, Boolean…, this, super
+              "storage.modifier", //static keyword
+              "storage.type.class.js", //class keyword
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": [
+              //following will be excluded from italics (VSCode has some defaults for italics)
+              "invalid",
+              "keyword.operator",
+              "constant.numeric.css",
+              "keyword.other.unit.px.css",
+              "constant.numeric.decimal.js",
+              "constant.numeric.json"
+            ],
+            "settings": {
+              "fontStyle": ""
+            }
+          }
+        ]
+      },
+    "editor.fontLigatures": true,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.settings.editor": "json", //can be ui here
+    "window.density.editorTabHeight": "compact",
+
+    // Emmet
+    "emmet.triggerExpansionOnTab": true,
+
+    // Auto closing tags
+    "html.autoClosingTags": true,
+    "javascript.autoClosingTags": true,
+    "typescript.autoClosingTags": true,
+
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "files.watcherExclude": {
+        "**/coverage/**": true
+    },
+    "workbench.tree.indent": 10,
+    // "tabnine.experimentalAutoImports": true,
+    "git.autofetch": true,
+
+    // Cursor
+    "editor.cursorStyle": "line-thin",
+
+    "editor.quickSuggestionsDelay": 0,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "prettier.tabWidth": 4,
+    "prettier.semi": false,
+    "prettier.useTabs": true,
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.arrowParens": "avoid",
+    "prettier.trailingComma": "none",
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#BF616A",
+      "statusBar.noFolderBackground": "#BF616A",
+      "statusBar.debuggingBackground": "#BF616A",
+      "statusBar.foreground": "#434C5E",
+      "statusBar.debuggingForeground": "#434C5E"
+    },
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Kanagawa Dragon",
+    "files.defaultLanguage": "plaintext",
+
+    // Breadcrumbs
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
+
+    // JS & TS
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.suggest.paths": false,
+    "typescript.suggest.paths": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "city-lights-icons-vsc"
+}

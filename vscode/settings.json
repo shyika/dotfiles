@@ -75,7 +75,6 @@
     "telemetry.enableTelemetry": false,
     "editor.tabCompletion": "on",
     "editor.fontSize": 13,
-    "editor.fontFamily": "SF Mono",
     "workbench.editor.wrapTabs": true,
     "workbench.settings.editor": "json", //can be ui here
     "explorer.confirmDelete": false,
@@ -86,7 +85,6 @@
     "workbench.tree.indent": 10,
     "tabnine.experimentalAutoImports": true,
     "git.autofetch": true,
-    "workbench.colorTheme": "Visual Studio Dark",
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
@@ -103,10 +101,15 @@
     "prettier.arrowParens": "avoid",
     "prettier.trailingComma": "none",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#BF616A",
-        "statusBar.noFolderBackground": "#BF616A",
-        "statusBar.debuggingBackground": "#BF616A",
+        "statusBar.background": "#B48EAD",
+        "statusBar.noFolderBackground": "#B48EAD",
+        "statusBar.debuggingBackground": "#B48EAD",
         "statusBar.foreground": "#434C5E",
         "statusBar.debuggingForeground": "#434C5E"
-    }
+    },
+    "workbench.iconTheme": "city-lights-icons-vsc",
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Kanagawa Dragon"
 }

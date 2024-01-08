@@ -18,3 +18,25 @@ Path Intellisense
 
 Darkula
 vscode-intellij-darcula-theme(italic)
+
+// Latest installed and enabled
+GraphQL: Language Feature Support
+Backticks
+City Lights Icon package
+Code Spell Checker
+colorize
+ESLint
+GraphQL: Syntax Highlighting
+Import Cost
+IntelliCode
+Kanagawa Flavors
+Live Server (Five Server)
+Path Intellisense
+Prettier - Code formatter
+SCSS IntelliSense
+Svg Preview
+Tailwind CSS IntelliSense
+Vim
+GitLens — Git supercharged
+Git History
+Git Blame
