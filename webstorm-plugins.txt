@@ -4,4 +4,66 @@ Kjump
 i18n support
 
 SonarLint
-CodeTogether
+CodeTogether - 
+__________________________
+Iceberg
+Carbon
+Nord
+.env files support
+GraphQL
+
+
+// Disabled
+Docker
+FTP/SFTP/WebDAV Connectivity
+Vagrant
+Refactor X
+Cucumber.js
+Karma
+Polymer & Web Components
+Styled Components & Styled JSX
+TSLint
+Keymap - Disable All
+
+/* Languages */
+Cherkin
+Shell script
+
+Endpoints
+OpenAPI Specifications
+
+Less
+EJS
+Hundlebars/Mustache
+Pug(ex-Jade)
+
+UI - Disable All
+
+Mercurial
+Subversion
+Code With Me
+Copyright
+Diagrams
+Performance Testing
+Qodana
+Space
+TextMate Bundles
+Time Tracking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
