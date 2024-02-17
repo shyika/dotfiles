@@ -72,11 +72,13 @@
   }
 }
 
+
 // Plugins list
 	// React ES6 Snippets
   // Terminus
   // Visual Studio Dark
   // ChangeQuotes
+  // A File Icon
 
   // SyncedSideBar
   // Theme - Spacecgray
@@ -96,5 +98,4 @@
   // JSX
   // LiveReload
   // Sass
-  // A File Icon
 
