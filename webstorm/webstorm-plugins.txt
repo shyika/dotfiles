@@ -2,48 +2,67 @@ GitToolBox
 IdeaVim
 Kjump
 i18n support
-
-SonarLint
-CodeTogether - 
-__________________________
-Iceberg
-Carbon
-Nord
 .env files support
 GraphQL
 
+SonarLint -
+CodeTogether -
+__________________________
+Iceberg
+Carbon -
+Nord -
+
 
 // Disabled
+---- Deployment
 Docker
 FTP/SFTP/WebDAV Connectivity
 Vagrant
+---- HTML and XML
 Refactor X
+---- JS Frameworks and Tools
 Cucumber.js
 Karma
+Node.js Remote Interpreter
 Polymer & Web Components
 Styled Components & Styled JSX
 TSLint
-Keymap - Disable All
 
-/* Languages */
+---- Keymap 
+Disable All
+
+---- Languages
 Cherkin
 Shell script
 
+---- Microservices
 Endpoints
 OpenAPI Specifications
 
+---- Remote Development
+Dev Containers
+Remote development Gateway
+
+---- Style Sheets
 Less
+
+---- Template Languages
 EJS
 Hundlebars/Mustache
 Pug(ex-Jade)
 
-UI - Disable All
+---- UI
+Disable All
 
+---- Version Control
 Mercurial
 Subversion
+
+---- Other Tools
 Code With Me
 Copyright
 Diagrams
+Local Productivity Statistics
 Performance Testing
 Qodana
 Space
