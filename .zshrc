@@ -1,8 +1,24 @@
-# If you come from bash you might have to change your $PATH.
-export SUBLIME="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
-export BREW=/opt/homebrew/bin
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-export PATH=$SUBLIME:$BREW:$HOME/bin:/usr/local/bin:$PATH
+export SUBLIME="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+
+# If you come from bash you might have to change your $PATH.
+export PATH=$SUBLIME:$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Shortcuts
 alias ~='cd ~'
@@ -18,22 +34,16 @@ alias r='source ~/.zshrc'
 # 320K
 # Download and convert to mp3 from youtube
 alias ydmp3='yt-dlp -x --audio-format mp3 --audio-quality 0'
+alias ydmp3list='yt-dlp -x --audio-format mp3 --audio-quality 0 --yes-playlist'
 alias ydv='yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
+# alias ydvc='yt-dlp --cookies cookies.txt --cookies-from-browser chrome --allow-unplayable-formats -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
+alias ydvc='yt-dlp --cookies-from-browser chrome --allow-unplayable-formats -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
 # alias ydlmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --yes-playlist'
 
 alias gbclean='git branch | grep -v "master" | xargs git branch -D'
 alias gbclear='git branch | grep -v "main" | xargs git branch -D'
-alias gcclean='git checkout index-with-menu.html packages/platform-common-service/src/http/graphql/graphql-client-factory.js packages/platform-common-service/src/utils/env-utils.js'
-alias grestore='git restore --staged index-with-menu.html index.html scripts/token-update.js .gitignore webpack.config.js'
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+alias grestore='git restore --staged index-with-menu.html index.html scripts/token-update.js .gitignore webpack.config.js packages/notification-rules-service/src/notification-templates-service/create-templates.js packages/notification-rules-service/src/notification-templates-service/index.js'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -95,7 +105,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,6 +134,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
