@@ -7,7 +7,10 @@ Plug 'mxw/vim-jsx'
 
 call plug#end()
 
+let mapleader = " "
+
 nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>e :wincmd p<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
